@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ví dụ form</title>
+  </head>
+  <body>
+    <h1>Ví dụ form</h1>
+    <a href="index.html">Back to home</a>
+    <h2>Nhập thông tin:</h2>
+
+    <!-- PHP là ngôn ngữ máy chủ để xử lý dữ liệu từ form, có thể dùng nhiều ngôn ngữ khác -->
+    <!-- method là phương thức gửi dữ liệu, thường là POST hoặc GET -->
+    <!-- POST là phương thức gửi dữ liệu an toàn hơn, không hiển thị trên URL, thường để create/ update dữ liệu -->
+    <!-- GET là phương thức gửi dữ liệu hiển thị trên URL, thường dùng để lấy/ tìm kiếm dữ liệu-->
+    <!-- Hiện tại ấn gửi không có gì vì ta cần setup server + viết code để lắng nghe và nhận dữ liệu 
+    Dữ liệu sau đó có thể được lưu vào database -->
+    <form action="localhost://get" method="POST">
+      <label for="name">Tên:</label>
+      <input type="text" name="name" id="name" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required /><br /><br />
+
+      <label for="message">Nội dung:</label><br />
+      <textarea name="message" id="message" rows="4" cols="30"></textarea
+      ><br /><br />
+
+      <button type="submit">Gửi</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Thẻ meta để cung cấp thông tin siêu dữ liệu (metadata) 
+        về trang web cho trình duyệt, công cụ tìm kiếm (Google),
+         mạng xã hội, và các công cụ khác. 
+    -->
+    <!-- Thẻ này giúp trình duyệt hiểu được mã hóa ký tự của trang web. -->
+    <meta charset="UTF-8" />
+
+    <!-- Tối ưu cho công cụ tìm kiếm SEO -->
+    <meta name="Web-tutorial" content="Hướng dẫn học lập trình" />
+
+    <!-- Tối ưu cho hiển thị trên mobile (responsive layout) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BLOG</title>
+  </head>
+
+  <body>
+    <h1>Web App Development Tutorial</h1>
+    <h2>Web App Development Tutorial</h2>
+    <h3>Web App Development Tutorial</h3>
+    <h4>Web App Development Tutorial</h4>
+    <h5>Web App Development Tutorial</h5>
+
+    <a href="https://google.com.vn">Sang Google</a>
+    <a href="https://google.com.vn">
+        <button> Sang Google nhưng là button</button>
+       </a>
+       <br />
+       <h3 id="something">Something will change</h3>
+    <button onclick="doSomething()" style="background-color: greenyellow;">Click me do something</button>
+    <!-- Về sau script sẽ dùng js để viết riêng tách logic ra-->
+    <script>
+        function doSomething() {
+            document.getElementById("something").innerHTML = "Changed";
+        }
+    </script>
+    <br />
+    <br />
+    <a href="about.html">Sang trang about</a>
+    <br />
+    <br />
+    <a href="form.html">Sang form</a>
+    <p>Thẻ br để xuống dòng</p>
+    <input type="text" placeholder="Thẻ input để nhập dữ liệu" />
+    <br />
+    <br />
+    <i>Thẻ i để in nghiêng</i>
+    <b>Thẻ b để in đậm</b>
+    <mark>Thẻ mark để đánh dấu</mark>
+    
+    <p>Thẻ <big>Big</big> để cho to lên </p>
+    <p>Thẻ <small>Small</small> để cho nhỏ lại</p>
+    <p>Thẻ <del>Del</del> để gạch ngang</p
+    <p>Thẻ <ins>Ins</ins> để gạch chân</p>
+    <p>Thẻ <sub>Sub</sub> để viết dưới dòng</p
+    <p>Thẻ <sup>Sup</sup> để viết trên dòng</p>
+    <p>Thẻ <u>uuuuuuu</u> để gạch chân</p>
+    <p>Thẻ <s>S</s> để gạch ngang</p>
+    <p>Thẻ code để hiển thị code, ví dụ: <code> <br>if (rich) {
+        <br>
+        nhiều gái theo
+        <br>
+    } </code> </p>
+
+    <p>Thẻ <q>Q = quote</q> để hiển thị đoạn trích dẫn ngắn</p>
+    <p>Thẻ <blockquote>Blockquote</blockquote> để hiển thị đoạn trích dẫn dài</p>
+      <p>Thẻ <strong>Strong</strong> để nhấn mạnh văn bản</p>
+    <p>Thẻ <em>Em</em> để nhấn mạnh văn bản</p>
+    <h4>Unorder list</h4>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <h4>Order list</h4>
+
+    <!-- Mặc định là type="1" dạng 1,2,3-->
+  <ol type="A">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+        <table bgcolor="lightblue" border="1" cellpadding="10">
+        <tr bgcolor="grey">
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr bgcolor="lightgrey">
+            <td>All day</td>
+            <td>9am - 5pm</td>
+            <td>9am - 5pm</td>
+            <td>9am - 5pm</td>
+            <td>9am - 5pm</td>
+            <td>9am - 5pm</td>
+            <td>Closed</td>
+        </tr>
+    </table>
+
+    <video controls autoplay src="assets/video.mp4" height="500" width="200"></video>
+
+    <h3>Một số thẻ nâng cao ít dùng hơn:</h3>
+    
+    <p>Thẻ <cite>Cite</cite> để hiển thị tên tác phẩm, sách, bài báo, v.v.</p>
+    <p>Thẻ <address>Address</address> để hiển thị thông tin liên hệ</p>
+    <p>Thẻ <abbr>Abbr</abbr> để hiển thị từ viết tắt</p>
+    <p>Thẻ <time>Time</time> để hiển thị thời gian</p>
+    <p>Thẻ <dfn>Dfn</dfn> để định nghĩa một thuật ngữ</p>
+    <p>Thẻ <var>Var</var> để hiển thị biến trong công thức toán học</p>
+    <p>Thẻ <samp>Samp</samp> để hiển thị mẫu đầu ra của chương trình</p>
+    <p>Thẻ <kbd>Kbd</kbd> để hiển thị các phím trên bàn phím</p>
+    <p>Thẻ <bdo>Bdo</bdo> để thay đổi hướng văn bản</p>
+    <p>Thẻ <bdi>Bdi</bdi> để ngăn chặn việc định dạng văn bản tự động</p>
+    <p>Thẻ <wbr>Wbr</wbr> để chỉ định vị trí có thể ngắt dòng</p>
+    <p>Thẻ <samp>Samp</samp> để hiển thị mẫu đầu ra của chương trình</p>
+  
+
+  </body>
+</html>
